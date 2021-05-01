@@ -1,0 +1,58 @@
+﻿@model List<DistroLab2.Models.ViewModels.MessageViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{ if (Model.Count() > 0)
+    {
+
+        <h1> Messages from @Model[0].Sender</h1>
+    }
+}
+<h1>Your inbox</h1>
+
+<!--<p>
+    <a asp-action="Create">Create New</a>
+</p>-->
+
+<a asp-action="Inbox">Back to inbox</a> 
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+
+            <th>
+                Time Sent
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (!item.IsRead)
+                    {
+                        <b>(NEW!)</b> @Html.DisplayFor(modelItem => item.Title)
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.Title)
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeSent)
+                </td>
+
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Read</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

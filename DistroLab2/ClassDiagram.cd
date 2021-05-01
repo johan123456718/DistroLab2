@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DistroLab2.Controllers.MessageController">
+    <Position X="8.5" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAABAACAAEAAAAAAAAEAEECABAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\MessageController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_userLogic" />
+      <Field Name="_messageLogic" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DistroLab2.Data.MessageDbContext">
+    <Position X="20.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Data\MessageDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Data.MessageRepository">
+    <Position X="15.75" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAgBAEAAABAAAAAAAAAQAAAAAAAAAQAAAAAAAAAI=</HashCode>
+      <FileName>Data\MessageRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DistroLab2.Models.MessageLogic">
+    <Position X="12.25" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AKBAAABAAAAAAAQAAAAAAAAAIAAAAACAAIAAAAAAAAA=</HashCode>
+      <FileName>Models\MessageLogic.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="messageRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DistroLab2.Models.Message">
+    <Position X="13.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgEAAEAAAAAAEACAAAABAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Models\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Models.ViewModels.ErrorViewModel">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ViewModels\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Models.ViewModels.IndexViewModel">
+    <Position X="4.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAgAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\ViewModels\IndexViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Models.ViewModels.MessageViewModel">
+    <Position X="6.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAEAAEAAAEACAAAAAAAAAAAAAAQAIAAA=</HashCode>
+      <FileName>Models\ViewModels\MessageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Models.ViewModels.ReadViewModel">
+    <Position X="6.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAQAAAAAACAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Models\ViewModels\ReadViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Models.ViewModels.SendFormViewModel">
+    <Position X="4.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ViewModels\SendFormViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Areas.Identity.Data.LoginContext">
+    <Position X="20.75" Y="10.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Data\LoginContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Areas.Identity.Data.LoginRepository">
+    <Position X="17.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABAABAAAACAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Areas\Identity\Data\LoginRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DistroLab2.Areas.Identity.Models.LoginDetails">
+    <Position X="14.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAACAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Models\LoginDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Areas.Identity.Models.LoginUser">
+    <Position X="14.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Models\LoginUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistroLab2.Areas.Identity.Models.UserLogic">
+    <Position X="11.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAABAAAACAAAAAAQAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Areas\Identity\Models\UserLogic.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="loginRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

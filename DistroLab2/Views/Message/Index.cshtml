@@ -1,0 +1,13 @@
+﻿@model DistroLab2.Models.ViewModels.IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome <b>@Model.UserName</b> </h1>
+
+    <p> Amount of logins this month:  <b>@Model.NrOfLogins</b> </p>
+
+    <p> Last login: <b>@Model.LastLogin</b> </p>
+
+</div>

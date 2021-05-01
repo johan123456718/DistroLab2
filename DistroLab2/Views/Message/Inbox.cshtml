@@ -1,0 +1,31 @@
+﻿@model DistroLab2.Models.ViewModels.ReadViewModel
+
+@{
+    ViewData["Title"] = "Inbox";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Sender
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.UserList)
+        {
+            <tr>
+                <td>
+                    <a asp-action="MessageList" asp-route-userName="@item">@item</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+<p> Total number of messages recieved: @Model.TotNrOfMessages</p>
+<p> Number of messages read: @Model.NrOfRead</p>
+<p> Number of messages deleted: @Model.NrOfDeleted</p>
+
